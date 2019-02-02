@@ -1,0 +1,35 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  &__aside {
+    width: 150px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: $background-aside;
+  }
+
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__content,
+  &__footer {
+    position: relative;
+    width: 100%;
+  }
+
+  &__navbar-toggle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

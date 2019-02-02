@@ -1,0 +1,27 @@
+.header {
+
+  &__container {
+    padding: 0 30px;
+  }
+
+  &__logo {
+    padding: 50px 0;
+  }
+
+  &__menu {
+    text-align: center;
+    padding: 30px 0;
+
+    .menu__link {
+      padding: 15px 0;
+    }
+  }
+
+  &__search {
+    padding: 30px 0;
+
+    .search__link {
+      padding: 15px 0;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.menu {
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color, color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &_style_horizontal {
+
+    .menu__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &_theme_transparent {
+
+    .menu__link {
+      color: $text-color--transparent;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+
+  &_size_small {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+.logo {
+  text-align: center;
+
+  &__link {
+    display: block;
+    position: relative;
+    padding-bottom: 18px;
+    font-family: $font-family--logo;
+    font-size: 32px;
+    line-height: 0.97;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-theme;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 4px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      border-radius: 1.5px;
+      background-color: $color-theme;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: lighten($color-theme, 10%);
+
+      &::before {
+        background-color: lighten($color-theme, 10%);
+      }
+    }
+  }
+}

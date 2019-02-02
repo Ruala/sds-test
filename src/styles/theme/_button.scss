@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: inherit;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 500px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &_size_medium {
+    font-size: 18px;
+    line-height: 55px;
+  }
+
+  &_size_large {
+    font-size: 20px;
+    line-height: 60px;
+  }
+
+  &_theme_main {
+    color: $color-light;
+    background-color: $color-theme;
+
+    &:hover {
+      background-color: lighten($color-theme, 5%);
+    }
+  }
+}

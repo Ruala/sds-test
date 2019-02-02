@@ -1,0 +1,53 @@
+.blockquote {
+
+  &__container {
+    background: url("../images/quote_big.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  &__content {
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 50px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 48px;
+      height: 39px;
+      background: url("../images/quote.png") no-repeat;
+    }
+  }
+
+  &__text {
+    font-size: 28px;
+    font-style: italic;
+    line-height: 1.36;
+  }
+
+  &__footer {
+    position: relative;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #8c9198;
+
+
+    &::before {
+      content: '';
+      display: block;
+      width: 61px;
+      height: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 2px;
+      background-color: #8c9198;
+    }
+  }
+}
+
+
+

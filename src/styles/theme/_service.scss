@@ -1,0 +1,22 @@
+.service {
+  text-align: center;
+  padding-top: 55px;
+
+  &__item {
+    padding: 0 60px 60px;
+    border-radius: 6px;
+    background-color: $background-light;
+  }
+
+  &__icon {
+    transform: translateY(-55px);
+  }
+
+  &__title {
+    margin: 0 0 20px;
+  }
+
+  &__button {
+    padding: 0 40px;
+  }
+}

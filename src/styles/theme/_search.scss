@@ -1,0 +1,22 @@
+.search {
+
+  &__link {
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  &_theme_transparent {
+
+    .search__link {
+      color: $text-color--transparent;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+}

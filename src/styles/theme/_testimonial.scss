@@ -1,0 +1,13 @@
+.testimonial {
+
+  &__container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  &__blockquote {
+    max-width: 790px;
+    margin: 0 auto;
+    color: $color-light;
+  }
+}
